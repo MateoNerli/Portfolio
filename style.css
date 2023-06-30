@@ -103,7 +103,7 @@ html {
 }
 
 .inicio .contenido-banner h2 {
-  font-size: 15px;
+  font-size: 17px;
   font-weight: normal;
 }
 
@@ -215,7 +215,9 @@ html {
   font-size: 30px;
   margin-bottom: 10px;
 }
-
+.sobre-mi .contenido-sobremMI p {
+  font-size: 17px;
+}
 .sobre-mi button {
   cursor: pointer;
   background-color: transparent;
