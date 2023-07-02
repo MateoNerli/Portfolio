@@ -53,11 +53,11 @@ html {
 }
 
 .contendor-header header nav ul li a:hover {
-  color: #1cb698;
+  color: #2984fc;
 }
 
 .nav-responsive {
-  background-color: #1cb698;
+  background-color: #2984fc;
   color: #fff;
   padding: 5px 10px;
   border-radius: 5px;
@@ -71,7 +71,7 @@ html {
       rgba(30, 35, 38, 0.8),
       rgba(30, 35, 38, 1)
     ),
-    url(./img/fondo.jpg);
+    url(./img/1634821415328.jpg);
   background-size: cover;
   height: 100vh;
   color: #fff;
@@ -90,7 +90,7 @@ html {
 
 .inicio .contenido-banner img {
   margin-top: 40px;
-  border: 10px solid #1cb698;
+  border: 10px solid #2984fc;
   display: block;
   width: 80%;
   margin: auto;
@@ -122,7 +122,7 @@ html {
 }
 
 .inicio .contenido-banner .redes a:hover {
-  background-color: #1cb698;
+  background-color: #2984fc;
   color: #fff;
 }
 
@@ -152,7 +152,7 @@ html {
 
 .sobre-mi .contenido-sobremMI .p span {
   font-weight: bold;
-  color: #1cb698;
+  color: #2984fc;
 }
 
 .sobre-mi .fila {
@@ -179,13 +179,13 @@ html {
 
 .sobre-mi .datos ul li strong {
   display: inline-block;
-  color: #1cb698;
+  color: #2984fc;
   width: 150px;
 }
 
 .sobre-mi .datos ul li span {
   font-weight: bold;
-  color: #1cb698;
+  color: #2984fc;
   padding: 3px;
   border-radius: 5px;
 }
@@ -209,7 +209,7 @@ html {
 }
 
 .sobre-mi .fila .datos .contenedor-intereses .interes:hover {
-  background-color: #1cb698;
+  background-color: #2984fc;
 }
 
 .sobre-mi .fila .datos .contenedor-intereses .interes i {
@@ -239,7 +239,7 @@ html {
   left: 0;
   width: 0;
   height: 100%;
-  background-color: #1cb698;
+  background-color: #2984fc;
   z-index: -1;
   transition: 0.5s;
 }
@@ -288,7 +288,7 @@ html {
   margin-bottom: 30px;
 }
 .skills .skill .progreso {
-  background-color: #1cb698;
+  background-color: #2984fc;
   position: absolute;
   top: 0;
   left: 0;
@@ -298,7 +298,7 @@ html {
   position: absolute;
   height: 35px;
   width: 35px;
-  background-color: #1cb698;
+  background-color: #2984fc;
   border-radius: 50px;
   line-height: 40px;
   text-align: center;
@@ -366,30 +366,30 @@ html {
   margin-bottom: 10px;
 }
 .estudios .fila .item .casa {
-  color: #1cb698;
+  color: #2984fc;
   font-size: 22px;
   font-weight: bold;
   display: block;
 }
 .estudios .fila .item .fecha {
   display: block;
-  color: #1cb698;
+  color: #2984fc;
   margin-bottom: 10px;
 }
 .estudios .fila .item p {
   line-height: 24px;
 }
 .estudios .fila .izq {
-  border-right: 2px solid #1cb698;
+  border-right: 2px solid #2984fc;
   margin-right: 20px;
 }
 .estudios .fila .der {
-  border-left: 2px solid #1cb698;
+  border-left: 2px solid #2984fc;
   margin-left: 20px;
 }
 .estudios .fila .item .conectori {
   height: 2px;
-  background-color: #1cb698;
+  background-color: #2984fc;
   width: 47px;
   position: absolute;
   top: 50%;
@@ -401,14 +401,14 @@ html {
   height: 10px;
   width: 10px;
   border-radius: 50%;
-  background-color: #1cb698;
+  background-color: #2984fc;
   float: right;
   position: relative;
   bottom: 4px;
 }
 .estudios .fila .item .conectord {
   height: 2px;
-  background-color: #1cb698;
+  background-color: #2984fc;
   width: 47px;
   position: absolute;
   top: 50%;
@@ -420,7 +420,7 @@ html {
   height: 10px;
   width: 10px;
   border-radius: 50%;
-  background-color: #1cb698;
+  background-color: #2984fc;
   float: left;
   position: relative;
   bottom: 4px;
