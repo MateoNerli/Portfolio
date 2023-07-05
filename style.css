@@ -303,12 +303,156 @@ html {
   font-size: 14px;
 }
 
-/* Estas clases se agregaran dinamicamente mediante javascript */
+.skills .skill .html {
+  width: 0%;
+  animation: 2s html forwards;
+}
+@keyframes html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+.skills .skill .css {
+  width: 0%;
+  animation: 2s css forwards;
+}
+@keyframes css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
 .skills .skill .javascript {
   width: 0%;
   animation: 2s javascript forwards;
 }
 @keyframes javascript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+.skills .skill .MySQL {
+  width: 0%;
+  animation: 2s MySQL forwards;
+}
+@keyframes MySQL {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+.skills .skill .cc {
+  width: 0%;
+  animation: 2s cc forwards;
+}
+@keyframes cc {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+.skills .skill .csharp {
+  width: 0%;
+  animation: 2s csharp forwards;
+}
+@keyframes csharp {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+.skills .skill .java {
+  width: 0%;
+  animation: 2s java forwards;
+}
+@keyframes java {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 45%;
+  }
+}
+.skills .skill .ingles {
+  width: 0%;
+  animation: 2s ingles forwards;
+}
+@keyframes ingles {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+.skills .skill .comunicacion {
+  width: 0%;
+  animation: 2s comunicacion forwards;
+}
+@keyframes comunicacion {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+.skills .skill .TRABAJO {
+  width: 0%;
+  animation: 2s TRABAJO forwards;
+}
+@keyframes TRABAJO {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+.skills .skill .CREATIVIDA {
+  width: 0%;
+  animation: 2s CREATIVIDA forwards;
+}
+@keyframes CREATIVIDA {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
+  }
+}
+.skills .skill .DEDICACION {
+  width: 0%;
+  animation: 2s DEDICACION forwards;
+}
+@keyframes DEDICACION {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+.skills .skill .COLABORACON {
+  width: 0%;
+  animation: 2s COLABORACON forwards;
+}
+@keyframes COLABORACON {
   0% {
     width: 0%;
   }
@@ -475,7 +619,7 @@ html {
   left: 0;
   width: 0;
   height: 100%;
-  background-color: #1cb698;
+  background-color: #2984fc;
   z-index: -1;
   transition: 1s;
 }
@@ -498,7 +642,7 @@ html {
   margin-bottom: 20px;
 }
 .contacto .col .info ul li i {
-  color: #1cb698;
+  color: #2984fc;
   display: inline-block;
   margin-right: 20px;
 }
@@ -530,7 +674,7 @@ footer .arriba {
   display: block;
   width: 50px;
   height: 50px;
-  background-color: #1cb698;
+  background-color: #2984fc;
   color: #fff;
   position: absolute;
   left: 50%;
@@ -539,6 +683,13 @@ footer .arriba {
   border-radius: 50%;
   line-height: 50px;
   font-size: 18px;
+}
+
+footer .arriba:hover {
+  background-color: #000;
+}
+
+@media screen and (max-width: 1336px) {
 }
 @media screen and (max-width: 980px) {
   nav {
