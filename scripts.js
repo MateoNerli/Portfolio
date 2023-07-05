@@ -17,12 +17,19 @@ function seleccionar() {
 
 function efectoSkills() {
   let skills = document.getElementById("skills");
-  let skillsTop = skills.offsetTop;
-  let skillsHeight = skills.offsetHeight;
-  let windowHeight = window.innerHeight;
-  let windowScrollTop = window.pageYOffset;
-
-  if (windowScrollTop > skillsTop + skillsHeight - windowHeight) {
-    skills.classList.add("skills-efecto");
+  let distanciaSkills = window.innerHeight - skills.getBoundingClientRect().top;
+  if (distanciaSkills >= 300) {
+    let habilidades = document.getElementsByClassName("progreso");
+    habilidades[0].classList.add("html");
+    habilidades[1].classList.add("css");
+    habilidades[2].classList.add("javascript");
+    habilidades[3].classList.add("MySQL");
+    habilidades[4].classList.add("cc");
+    habilidades[5].classList.add("csharp");
+    habilidades[6].classList.add("java");
+    habilidades[7].classList.add("ingles");
   }
 }
+window.onscroll = function () {
+  efectoSkills();
+};
