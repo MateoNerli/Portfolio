@@ -21,14 +21,14 @@
         </div>
         <nav id="nav">
           <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#sobre-mi">Sobre mi</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#estudios">Estudios</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+            <li><a href="#sobre-mi" onclick="seleccionar()">Sobre mi</a></li>
+            <li><a href="#skills" onclick="seleccionar()">Skills</a></li>
+            <li><a href="#estudios" onclick="seleccionar()">Estudios</a></li>
+            <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
           </ul>
         </nav>
-        <div class="nav-responsive">
+        <div class="nav-responsive" onclick="OcultarMenu()">
           <i class="fa-solid fa-bars"></i>
         </div>
       </header>
@@ -139,7 +139,7 @@
             <div class="skill">
               <span>HTML</span>
               <div class="barra-skill">
-                <div class="progreso">
+                <div class="progreso html">
                   <span>90%</span>
                 </div>
               </div>
@@ -147,7 +147,7 @@
             <div class="skill">
               <span>CSS</span>
               <div class="barra-skill">
-                <div class="progreso">
+                <div class="progreso css">
                   <span>80%</span>
                 </div>
               </div>
@@ -163,7 +163,7 @@
             <div class="skill">
               <span>MY SQL</span>
               <div class="barra-skill">
-                <div class="progreso">
+                <div class="progreso MySQL">
                   <span>50%</span>
                 </div>
               </div>
@@ -171,7 +171,7 @@
             <div class="skill">
               <span>C++</span>
               <div class="barra-skill">
-                <div class="progreso">
+                <div class="progreso cc">
                   <span>75%</span>
                 </div>
               </div>
@@ -179,7 +179,7 @@
             <div class="skill">
               <span>C#</span>
               <div class="barra-skill">
-                <div class="progreso">
+                <div class="progreso csharp">
                   <span>75%</span>
                 </div>
               </div>
@@ -187,7 +187,7 @@
             <div class="skill">
               <span>JAVA</span>
               <div class="barra-skill">
-                <div class="progreso">
+                <div class="progreso java">
                   <span>45%</span>
                 </div>
               </div>
@@ -195,7 +195,7 @@
             <div class="skill">
               <span>INGLES</span>
               <div class="barra-skill">
-                <div class="progreso">
+                <div class="progreso ingles">
                   <span>50%</span>
                 </div>
               </div>
@@ -207,7 +207,7 @@
             <div class="skill">
               <span>COMUNICACION</span>
               <div class="barra-skill">
-                <div class="progreso">
+                <div class="progreso comunicacion">
                   <span>75%</span>
                 </div>
               </div>
@@ -215,7 +215,7 @@
             <div class="skill">
               <span>TRABAJO EN EQUIPO</span>
               <div class="barra-skill">
-                <div class="progreso">
+                <div class="progreso TRABAJO">
                   <span>80%</span>
                 </div>
               </div>
@@ -223,7 +223,7 @@
             <div class="skill">
               <span>CREATIVIDA</span>
               <div class="barra-skill">
-                <div class="progreso">
+                <div class="progreso CREATIVIDA">
                   <span>65%</span>
                 </div>
               </div>
@@ -231,7 +231,7 @@
             <div class="skill">
               <span>DEDICACION</span>
               <div class="barra-skill">
-                <div class="progreso">
+                <div class="progreso DEDICACION">
                   <span>80%</span>
                 </div>
               </div>
@@ -239,7 +239,7 @@
             <div class="skill">
               <span>COLABORACON</span>
               <div class="barra-skill">
-                <div class="progreso">
+                <div class="progreso COLABORACON">
                   <span>75%</span>
                 </div>
               </div>
@@ -372,5 +372,7 @@
         ></a>
       </div>
     </footer>
+
+    <script src="./scripts.js"></script>
   </body>
 </html>
