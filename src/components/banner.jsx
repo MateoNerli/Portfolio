@@ -10,12 +10,12 @@ export const Banner = () => {
       >
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="relative z-10 max-w-[1200px]  mx-auto 0 h-full w-full flex flex-col justify-center items-center text-white">
-          <p className="bienvenida text-5xl mb-7 p-5 tracking-wider">
+          <p className="bienvenida text-5xl mb-7 p-5 tracking-wider ">
             Bienvenidos
           </p>
           <h2 className="text-2xl my-6 text-center">
             Soy{" "}
-            <span className="text-blue-400 text-3xl font-bold">
+            <span className="text-[#32adff] text-3xl font-bold">
               Mateo Nerli
             </span>
             , Desarrollador Full Stack JR
@@ -30,14 +30,14 @@ export const Banner = () => {
           </p>
           <div className="mt-5 flex space-x-4  justify-center algin-center">
             <a
-              href=""
-              className="text-2xl hover:text-blue-400 m-[10px] w-[40px] h-[40px] rounded-full bg-current flex justify-center items-center "
+              href="https://www.linkedin.com/in/mateo-nerli/"
+              className="text-2xl hover:text-[#32adff] m-[10px] w-[40px] h-[40px] rounded-full bg-current flex justify-center items-center "
             >
               <FontAwesomeIcon icon={faLinkedinIn} className="text-black" />
             </a>
             <a
-              href=""
-              className="text-2xl hover:text-blue-400 m-[10px] w-[40px] h-[40px] rounded-full bg-current flex justify-center items-center"
+              href="https://github.com/MateoNerli"
+              className="text-2xl hover:text-[#32adff] m-[10px] w-[40px] h-[40px] rounded-full bg-current flex justify-center items-center"
             >
               <FontAwesomeIcon icon={faGithub} className="text-black" />
             </a>
