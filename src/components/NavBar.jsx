@@ -1,5 +1,5 @@
 import { useState } from "react";
-import logo from "../assets/logoMn.png";
+import logo from "../assets/icono.png";
 import { navigation } from "../utils/navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
@@ -12,7 +12,13 @@ export const Navbar = () => {
       <div className="items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8">
         <div className="flex items-center justify-between py-3 md:py-5 md:block">
           <a href="">
-            <img src={logo} width={120} height={50} alt="Logo-Mn" />
+            <img
+              src={logo}
+              width={70}
+              height={40}
+              alt="Logo"
+              style={{ filter: "invert(100%)" }}
+            />
           </a>
           <div className="md:hidden">
             <button
@@ -35,7 +41,7 @@ export const Navbar = () => {
           <ul className="flex flex-col justify-center items-center space-y-8 md:flex-row md:space-x-6 md:space-y-0 md:items-start">
             {navigation.map((item, index) => (
               <li key={index}>
-                <a className="font-serif text-gray-300 hover:text-white text-lg font-medium border-b border-transparent hover:border-white transition duration-300 ease-in-out ">
+                <a className="font-sans text-gray-300 hover:text-white text-lg font-medium border-b border-transparent hover:border-white transition duration-300 ease-in-out ">
                   {item.title}
                 </a>
               </li>
