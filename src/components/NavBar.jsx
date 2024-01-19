@@ -11,7 +11,7 @@ export const Navbar = () => {
     <nav className="bg-[#212529] w-full border-b md:border-0 md:static">
       <div className="items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8">
         <div className="flex items-center justify-between py-3 md:py-5 md:block">
-          <a href="">
+          <div className="transform transition-all hover:scale-125">
             <img
               src={logo}
               width={70}
@@ -19,10 +19,10 @@ export const Navbar = () => {
               alt="Logo"
               style={{ filter: "invert(100%)" }}
             />
-          </a>
+          </div>
           <div className="md:hidden">
             <button
-              className="text-gray-200 outline-none p-2 rounded-md focus:border-gray-400 focus:border"
+              className="text-gray-200 outline-none p-2 rounded-md focus:border-gray-400 focus:border text-3xl"
               onClick={() => setState(!state)}
             >
               {state ? (
@@ -41,7 +41,7 @@ export const Navbar = () => {
           <ul className="flex flex-col justify-center items-center space-y-8 md:flex-row md:space-x-6 md:space-y-0 md:items-start">
             {navigation.map((item, index) => (
               <li key={index}>
-                <a className="font-sans text-gray-300 hover:text-white text-lg font-medium border-b border-transparent hover:border-white transition duration-300 ease-in-out ">
+                <a className="font-sans text-gray-300 hover:text-white text-lg font-medium border-b border-transparent hover:border-[#32adff] transition duration-300 ease-in-out ">
                   {item.title}
                 </a>
               </li>
