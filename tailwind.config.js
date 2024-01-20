@@ -4,5 +4,6 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [],
+  variants: {},
+  plugins: ["tailwindcss-grid-template-columns"],
 };
