@@ -8,7 +8,7 @@ export const Proyects = () => {
     <div className="bg-[#27292a]">
       <div className="p-[20px] mx-auto px-4 max-w-screen-xl md:px-8">
         <div className="text-center">
-          <h1 className="text-3xl text-gray-100 font-semibold border-b">
+          <h1 className="text-3xl text-gray-100 font-semibold pb-4 border-b-2">
             Proyectos personales
           </h1>
         </div>
@@ -19,7 +19,7 @@ export const Proyects = () => {
               key={key}
             >
               <div>
-                <a href={items.href}>
+                <a href={items.href} target="_blank" rel="noopener noreferrer">
                   <img
                     src={items.img}
                     alt={items.title}
@@ -44,13 +44,21 @@ export const Proyects = () => {
                   <p className="text-gray-200 text-sm mt-1">{items.desc}</p>
                 </div>
                 <div className="flex justify-center p-[6px]">
-                  <a href={items.github}>
+                  <a
+                    href={items.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <FontAwesomeIcon
                       icon={faGithub}
                       className="text-2xl text-gray-100 hover:text-gray-200 p-[5px]"
                     />
                   </a>
-                  <a href={items.href}>
+                  <a
+                    href={items.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <FontAwesomeIcon
                       icon={faPaperPlane}
                       className="text-2xl text-gray-100 hover:text-gray-200 p-[5px]"
