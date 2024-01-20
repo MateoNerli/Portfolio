@@ -17,7 +17,7 @@ export const SobreMi = () => {
         <div className="max-w-[1200px] flex justify-center algin-center flex-wrap">
           <div className="hidden">
             <div>
-              <div className="text-center mb-[20px]">
+              <div className="text-center mb-[20px]" id="sobre-mi">
                 <div className="text-3xl font-Righteous mb-[25px] text-center text-white relative border-b-2">
                   <p className="text-3xl font-sans mb-[25px] text-center text-white p-[1rem] relative">
                     Sobre Mi

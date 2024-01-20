@@ -1,6 +1,6 @@
 export const navigation = [
-  { title: "Sobre mi" },
-  { title: "Skills" },
-  { title: "Proyectos" },
-  { title: "Contacto" },
+  { title: "Sobre mi", url: "/#sobre-mi" },
+  { title: "Skills", url: "/#skills" },
+  { title: "Proyectos", url: "/proyects" },
+  { title: "Contacto", url: "/contact" },
 ];
