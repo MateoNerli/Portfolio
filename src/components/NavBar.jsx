@@ -3,6 +3,7 @@ import logo from "../assets/icono.png";
 import { navigation } from "../utils/navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   const [state, setState] = useState(false);
@@ -41,9 +42,9 @@ export const Navbar = () => {
           <ul className="flex flex-col justify-center items-center space-y-8 md:flex-row md:space-x-6 md:space-y-0 md:items-start">
             {navigation.map((item, index) => (
               <li key={index}>
-                <a className="font-sans text-gray-300 hover:text-white text-lg font-medium border-b border-transparent hover:border-[#32adff] transition duration-300 ease-in-out ">
+                <Link className="font-sans text-gray-300 hover:text-white text-lg font-medium border-b border-transparent hover:border-[#32adff] transition duration-300 ease-in-out ">
                   {item.title}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

@@ -1,19 +1,18 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import { Navbar } from "./components/NavBar";
-import { Banner } from "./components/banner";
-import { Footer } from "./components/footer";
-import { Skills } from "./components/skills";
-import { SobreMi } from "./components/sobreMi";
+import { Proyects } from "./components/proyects";
+import { Home } from "./components/home";
 
 function App() {
   return (
-    <>
+    <BrowserRouter>
       <Navbar />
-      <Banner />
-      <SobreMi />
-      <Skills />
-      <Footer />
-    </>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="proyects" element={<Proyects />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
