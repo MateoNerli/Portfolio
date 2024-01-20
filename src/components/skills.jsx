@@ -13,7 +13,10 @@ export const Skills = () => {
   return (
     <div className="box-border bg-[#1e2326] ">
       <div className="max-w-[1200px] pt-[20px] mx-auto  ">
-        <div className="text-3xl font-sans mb-[25px] text-center text-[#fff] p-[1rem] relative border-b">
+        <div
+          className="text-3xl font-sans mb-[25px] text-center text-[#fff] p-[1rem] relative border-b"
+          id="skills"
+        >
           <h2>Skills</h2>
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 ">
