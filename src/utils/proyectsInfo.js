@@ -4,7 +4,7 @@ import sixmotors from "../assets/Paginas/sixmotors.png";
 import sixMotorsDash from "../assets/Paginas/sixMotorsDash.png";
 import reloj from "../assets/Paginas/RelojAjedrez.png";
 import renovarte from "../assets/Paginas/Renovarte.png";
-import memorama from "../assets/Paginas/Memorama.png";
+import memorama from "../assets/Paginas/memo.png";
 import mercadoLiebre from "../assets/Paginas/mercadoLiebre.png";
 import {
   faHtml5,
