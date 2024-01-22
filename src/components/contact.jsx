@@ -27,10 +27,14 @@ export const Contact = () => {
               <h3 className="text-2xl font-semibold text-blue-400 mb-4">
                 Envianos un mensaje
               </h3>
-              <form action="">
+              <form action="https://formspree.io/f/xzbndzjn" method="POST">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="flex flex-col mb-4">
-                    <label htmlFor="nombre" className="text-white mb-1">
+                    <label
+                      htmlFor="nombre"
+                      name="Nombre"
+                      className="text-white mb-1"
+                    >
                       Nombre
                     </label>
                     <input
@@ -41,7 +45,11 @@ export const Contact = () => {
                     />
                   </div>
                   <div className="flex flex-col mb-4">
-                    <label htmlFor="apellido" className="text-white mb-1">
+                    <label
+                      htmlFor="apellido"
+                      name="Apellido"
+                      className="text-white mb-1"
+                    >
                       Apellido
                     </label>
                     <input
@@ -54,7 +62,11 @@ export const Contact = () => {
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="flex flex-col mb-4">
-                    <label htmlFor="email" className="text-white mb-1">
+                    <label
+                      htmlFor="email"
+                      name="Email"
+                      className="text-white mb-1"
+                    >
                       Email
                     </label>
                     <input
@@ -65,7 +77,11 @@ export const Contact = () => {
                     />
                   </div>
                   <div className="flex flex-col mb-4">
-                    <label htmlFor="telefono" className="text-white mb-1">
+                    <label
+                      htmlFor="telefono"
+                      name="Telefono"
+                      className="text-white mb-1"
+                    >
                       Telefono
                     </label>
                     <input
@@ -77,7 +93,11 @@ export const Contact = () => {
                   </div>
                 </div>
                 <div className="mb-4">
-                  <label htmlFor="mensaje" className="text-white mb-1">
+                  <label
+                    htmlFor="mensaje"
+                    name="Message"
+                    className="text-white mb-1"
+                  >
                     Mensaje
                   </label>
                   <textarea
