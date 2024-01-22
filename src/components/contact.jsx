@@ -1,17 +1,8 @@
 import { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faMapPin,
-  faEnvelope,
-  faPhone,
-} from "@fortawesome/free-solid-svg-icons";
-import {
-  faFacebook,
-  faTwitter,
-  faLinkedin,
-  faInstagram,
-} from "@fortawesome/free-brands-svg-icons";
+
 import Swal from "sweetalert2";
+import { Maps } from "./maps";
+import { InfoContact } from "./infoContact";
 
 export const Contact = () => {
   const [form, setForm] = useState({ nombre: "", email: "", mensaje: "" });
@@ -199,85 +190,8 @@ export const Contact = () => {
             </div>
 
             <div className="felx flex-col">
-              <div className="p-10 bg-gray-700">
-                <h3 className="text-2xl font-semibold text-blue-400 mb-4">
-                  Informacion
-                </h3>
-                <div className="mb-6">
-                  <div className="flex items-center mb-2">
-                    <span className="w-8 h-8 flex justify-center items-center text-black bg-blue-400 rounded-full">
-                      <FontAwesomeIcon icon={faMapPin} />
-                    </span>
-                    <p className="text-white ml-4">
-                      Buenos Aires, San Nicolas de los Arroyos
-                    </p>
-                  </div>
-                  <div className="flex items-center mb-2">
-                    <span className="w-8 h-8 flex justify-center items-center text-black bg-blue-400 rounded-full">
-                      <FontAwesomeIcon icon={faEnvelope} />
-                    </span>
-                    <a
-                      href="mailto:mnerli2003@gmail.com"
-                      className="text-white ml-4"
-                    >
-                      mnerli2003@gmail.com
-                    </a>
-                  </div>
-                  <div className="flex items-center">
-                    <span className="w-8 h-8 flex justify-center items-center text-black bg-blue-400 rounded-full">
-                      <FontAwesomeIcon icon={faPhone} />
-                    </span>
-                    <a href="tel:+543364512460" className="text-white ml-4">
-                      +54 3364512460
-                    </a>
-                  </div>
-                </div>
-                <ul className="flex">
-                  <li className="mr-4">
-                    <a
-                      href="https://www.facebook.com/mateo.nerli/"
-                      className="text-black text-2xl transition duration-300 hover:text-blue-600"
-                    >
-                      <FontAwesomeIcon icon={faFacebook} />
-                    </a>
-                  </li>
-                  <li className="mr-4">
-                    <a
-                      href="https://twitter.com/mateonerli4"
-                      className="text-black text-2xl transition duration-300 hover:text-blue-600"
-                    >
-                      <FontAwesomeIcon icon={faTwitter} />
-                    </a>
-                  </li>
-                  <li className="mr-4">
-                    <a
-                      href="https://www.linkedin.com/in/mateo-nerli-39661a270/"
-                      className="text-black text-2xl transition duration-300 hover:text-blue-600"
-                    >
-                      <FontAwesomeIcon icon={faLinkedin} />
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.instagram.com/mateo.nerli/"
-                      className="text-black text-2xl transition duration-300 hover:text-blue-600"
-                    >
-                      <FontAwesomeIcon icon={faInstagram} />
-                    </a>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="p-1 w-full h-[300px] md:h-[450px] flex flex-col">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.464789763558!2d-58.57338368476974!3d-34.61546198044836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaea670d5dc9%3A0x2198c0c4e022b4a2!2sObelisco!5e0!3m2!1ses-419!2sar!4v1638829341506!5m2!1ses-419!2sar"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen=""
-                  loading="lazy"
-                ></iframe>
-              </div>
+              <InfoContact />
+              <Maps />
             </div>
           </div>
         </div>
