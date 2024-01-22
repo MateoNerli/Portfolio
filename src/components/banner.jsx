@@ -13,7 +13,7 @@ export const Banner = () => {
           <p className="bienvenida text-4xl xs:text-5xl mb-7 p-5 tracking-wider ">
             Bienvenidos
           </p>
-          <h2 className="text-xl xs:text-2xl my-6 text-center">
+          <h2 className="text-xl xs:text-2xl my-6 text-center p-2">
             Soy{" "}
             <span className="text-[#32adff] text-2xl xs:text-3xl font-bold">
               Mateo Nerli
