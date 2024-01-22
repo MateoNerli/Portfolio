@@ -2,7 +2,7 @@ import html from "../assets/Skills/HTML5.png";
 import css from "../assets/Skills/CSS3.png";
 import js from "../assets/Skills/JavaScript.png";
 import react from "../assets/Skills/react.png";
-import vue from "../assets/Skills/Vue.png";
+import vue from "../assets/Skills/vue.png";
 import CSharp from "../assets/Skills/C-Sharp.png";
 import git from "../assets/Skills/Git.png";
 import github from "../assets/Skills/GitHub.png";
