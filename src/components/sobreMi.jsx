@@ -26,7 +26,7 @@ export const SobreMi = () => {
                 <h2 className="text-3xl font-bold m-[20px] m-[0] tracking-wider">
                   Hola, Soy <span className="text-[#66c7ff]">Mateo Nerli</span>
                 </h2>
-                <h3 className="text-lg">Programador</h3>
+                <h3 className="text-lg">Programador || Jr.Dev</h3>
               </div>
             </div>
           </div>
