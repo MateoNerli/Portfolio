@@ -2,8 +2,17 @@ import { Pags } from "../utils/proyectsInfo";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export const Proyects = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
+
   return (
     <div className="bg-[#27292a]">
       <div className="p-[20px] mx-auto px-4 max-w-screen-xl md:px-8">
@@ -15,6 +24,7 @@ export const Proyects = () => {
         <div className="mt-12 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
           {Pags.map((items, key) => (
             <div
+              data-aos="zoom-in"
               className="max-w-md mx-auto mt-4 shadow-lg border rounded-md hover:rotate-360 transition-transform duration-300 hover:shadow-sm"
               key={key}
             >

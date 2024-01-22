@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faMapPin,
@@ -10,8 +11,64 @@ import {
   faLinkedin,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
+import Swal from "sweetalert2";
 
 export const Contact = () => {
+  const [form, setForm] = useState({ nombre: "", email: "", mensaje: "" });
+  const [errors, setErrors] = useState({
+    nombre: false,
+    email: false,
+    mensaje: false,
+  });
+
+  const handleBlur = (field) => {
+    setErrors({ ...errors, [field]: !form[field] });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (
+      !form.nombre ||
+      !form.apellido ||
+      !form.email ||
+      !form.telefono ||
+      !form.mensaje
+    ) {
+      setErrors({
+        nombre: !form.nombre,
+        apellido: !form.apellido,
+        email: !form.email,
+        telefono: !form.telefono,
+        mensaje: !form.mensaje,
+      });
+      return;
+    }
+    Swal.fire({
+      icon: "success",
+      title: "Mensaje enviado con éxito",
+      text: "En breve nos pondremos en contacto con usted",
+    }).then(() => {
+      setForm({
+        nombre: "",
+        apellido: "",
+        email: "",
+        telefono: "",
+        mensaje: "",
+      });
+    });
+
+    fetch("https://formspree.io/f/xzbndzjn", {
+      method: "POST",
+      body: JSON.stringify(form),
+      headers: {
+        Accept: "application/json",
+      },
+    }).then((res) => res.json());
+    // .then((res) => {
+    //   // console.log(res);
+    // });
+  };
+
   return (
     <section id="contacto" className="bg-[#27292a] overflow-hidden">
       <div className="container mx-auto overflow-hidden">
@@ -27,7 +84,11 @@ export const Contact = () => {
               <h3 className="text-2xl font-semibold text-blue-400 mb-4">
                 Envianos un mensaje
               </h3>
-              <form action="https://formspree.io/f/xzbndzjn" method="POST">
+              <form
+                action="https://formspree.io/f/xzbndzjn"
+                method="POST"
+                onSubmit={handleSubmit}
+              >
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="flex flex-col mb-4">
                     <label
@@ -38,10 +99,14 @@ export const Contact = () => {
                       Nombre
                     </label>
                     <input
-                      type="text"
-                      id="nombre"
-                      placeholder="Pedro"
-                      className="p-2 border border-black"
+                      name="nombre"
+                      className={`w-full p-2 mt-1 border-2 ${
+                        errors.nombre ? "border-red-500" : "border-gray-300"
+                      } rounded-md focus:outline-none focus:border-blue-500 transition-colors duration-200`}
+                      onBlur={() => handleBlur("nombre")}
+                      onChange={(e) =>
+                        setForm({ ...form, nombre: e.target.value })
+                      }
                     />
                   </div>
                   <div className="flex flex-col mb-4">
@@ -53,10 +118,14 @@ export const Contact = () => {
                       Apellido
                     </label>
                     <input
-                      type="text"
-                      id="apellido"
-                      placeholder="Rodriguez"
-                      className="p-2 border border-black"
+                      name="apellido"
+                      className={`w-full p-2 mt-1 border-2 ${
+                        errors.apellido ? "border-red-500" : "border-gray-300"
+                      } rounded-md focus:outline-none focus:border-blue-500 transition-colors duration-200`}
+                      onBlur={() => handleBlur("apellido")}
+                      onChange={(e) =>
+                        setForm({ ...form, apellido: e.target.value })
+                      }
                     />
                   </div>
                 </div>
@@ -70,10 +139,14 @@ export const Contact = () => {
                       Email
                     </label>
                     <input
-                      type="text"
-                      id="email"
-                      placeholder="PedroRodriguez@email.com"
-                      className="p-2 border border-black"
+                      name="email"
+                      className={`w-full p-2 mt-1 border-2 ${
+                        errors.email ? "border-red-500" : "border-gray-300"
+                      } rounded-md focus:outline-none focus:border-blue-500 transition-colors duration-200`}
+                      onBlur={() => handleBlur("email")}
+                      onChange={(e) =>
+                        setForm({ ...form, email: e.target.value })
+                      }
                     />
                   </div>
                   <div className="flex flex-col mb-4">
@@ -85,25 +158,31 @@ export const Contact = () => {
                       Telefono
                     </label>
                     <input
-                      type="text"
-                      id="telefono"
-                      placeholder="+54 3364525352"
-                      className="p-2 border border-black"
+                      name="telefono"
+                      className={`w-full p-2 mt-1 border-2 ${
+                        errors.telefono ? "border-red-500" : "border-gray-300"
+                      } rounded-md focus:outline-none focus:border-blue-500 transition-colors duration-200`}
+                      onBlur={() => handleBlur("telefono")}
+                      onChange={(e) =>
+                        setForm({ ...form, telefono: e.target.value })
+                      }
                     />
                   </div>
                 </div>
                 <div className="mb-4">
-                  <label
-                    htmlFor="mensaje"
-                    name="Message"
-                    className="text-white mb-1"
-                  >
+                  <label htmlFor="mensaje" className="text-white mb-1">
                     Mensaje
                   </label>
                   <textarea
-                    className="w-full p-2 mt-1 border-2 border-gray-300 rounded-md focus:outline-none focus:border-blue-500 transition-colors duration-200"
+                    name="mensaje"
+                    className={`w-full p-2 mt-1 border-2 ${
+                      errors.mensaje ? "border-red-500" : "border-gray-300"
+                    } rounded-md focus:outline-none focus:border-blue-500 transition-colors duration-200`}
                     rows="4"
-                    placeholder="Escribe tu mensaje aquí..."
+                    onBlur={() => handleBlur("mensaje")}
+                    onChange={(e) =>
+                      setForm({ ...form, mensaje: e.target.value })
+                    }
                   ></textarea>
                 </div>
                 <div>
