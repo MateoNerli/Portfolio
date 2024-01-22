@@ -5,7 +5,18 @@ import { Maps } from "./maps";
 import { InfoContact } from "./infoContact";
 
 export const Contact = () => {
-  const [form, setForm] = useState({ nombre: "", email: "", mensaje: "" });
+  const initialState = {
+    nombre: "",
+    apellido: "",
+    email: "",
+    telefono: "",
+    mensaje: "",
+  };
+
+  const [form, setForm] = useState({
+    initialState,
+  });
+
   const [errors, setErrors] = useState({
     nombre: false,
     email: false,
@@ -39,13 +50,7 @@ export const Contact = () => {
       title: "Mensaje enviado con éxito",
       text: "En breve nos pondremos en contacto con usted",
     }).then(() => {
-      setForm({
-        nombre: "",
-        apellido: "",
-        email: "",
-        telefono: "",
-        mensaje: "",
-      });
+      setForm({ ...initialState });
     });
 
     fetch("https://formspree.io/f/xzbndzjn", {
@@ -90,6 +95,7 @@ export const Contact = () => {
                       Nombre
                     </label>
                     <input
+                      id="nombre"
                       name="nombre"
                       className={`w-full p-2 mt-1 border-2 ${
                         errors.nombre ? "border-red-500" : "border-gray-300"
@@ -109,6 +115,7 @@ export const Contact = () => {
                       Apellido
                     </label>
                     <input
+                      id="apellido"
                       name="apellido"
                       className={`w-full p-2 mt-1 border-2 ${
                         errors.apellido ? "border-red-500" : "border-gray-300"
@@ -130,6 +137,7 @@ export const Contact = () => {
                       Email
                     </label>
                     <input
+                      id="email"
                       name="email"
                       className={`w-full p-2 mt-1 border-2 ${
                         errors.email ? "border-red-500" : "border-gray-300"
@@ -149,6 +157,7 @@ export const Contact = () => {
                       Telefono
                     </label>
                     <input
+                      id="telefono"
                       name="telefono"
                       className={`w-full p-2 mt-1 border-2 ${
                         errors.telefono ? "border-red-500" : "border-gray-300"
@@ -165,6 +174,7 @@ export const Contact = () => {
                     Mensaje
                   </label>
                   <textarea
+                    id="mensaje"
                     name="mensaje"
                     className={`w-full p-2 mt-1 border-2 ${
                       errors.mensaje ? "border-red-500" : "border-gray-300"
