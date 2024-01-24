@@ -25,7 +25,7 @@ export const SobreMi = () => {
               className="w-full rounded-3xl shadow-lg"
             />
           </div>
-          <div data-aos="fade-left" className="m-[30px] flex-1">
+          <div data-aos="fade-left" className="m-[30px] flex-1" id="sobre-mi">
             <div className="text-center mb-[20px]">
               <p className="text-3xl font-sans mb-[25px] text-center text-white p-[1rem] relative">
                 Sobre Mi

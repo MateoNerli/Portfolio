@@ -3,7 +3,7 @@ import logo from "../assets/icono.png";
 import { navigation } from "../utils/navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 
 export const Navbar = () => {
   const [state, setState] = useState(false);
