@@ -10,6 +10,7 @@ import mySql from "../assets/Skills/MySQL.png";
 import node from "../assets/Skills/nodejs.png";
 import angular from "../assets/Skills/angular.png";
 import python from "../assets/Skills/python.png";
+import tailwind from "../assets/Skills/tailwind.png";
 
 export const SkillsData = [
   {
@@ -59,5 +60,9 @@ export const SkillsData = [
   {
     name: "Python",
     icon: python,
+  },
+  {
+    name: "Tailwind",
+    icon: tailwind,
   },
 ];
