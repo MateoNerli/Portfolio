@@ -8,9 +8,7 @@
   <rect width="600" height="360" fill="url(#grad)" rx="28" ry="28" />
   <g fill="#ffffff" font-family="'Segoe UI', Arial, sans-serif" text-anchor="middle">
     <text x="300" y="150" font-size="44" font-weight="700">Memorama</text>
-    <text x="300" y="210" font-size="26" opacity="0.85">
-Juego de memoria con cartas de autos que se voltean al hacer clic
-    </text>
-    <text x="300" y="265" font-size="22" opacity="0.7">Implementado con React y Tailwind CSS    </text>
+    <text x="300" y="210" font-size="26" opacity="0.85">Juego de memoria con cartas</text>
+    <text x="300" y="265" font-size="22" opacity="0.7">Implementado con React y Tailwind CSS</text>
   </g>
 </svg>

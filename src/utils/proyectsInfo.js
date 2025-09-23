@@ -2,7 +2,7 @@ import stockControl from "../assets/Paginas/stockControlDrink.svg";
 import secretPass from "../assets/Paginas/secretPass.svg";
 import vibratta from "../assets/Paginas/vibratta.svg";
 import divisor from "../assets/Paginas/divisorGastos.svg";
-import memorama from "../assets/Paginas/memorama.png";
+import memorama from "../assets/Paginas/memorama.svg";
 import sixmotors from "../assets/Paginas/sixmotors.png";
 import sixMotorsDash from "../assets/Paginas/sixMotorsDash.png";
 import generador from "../assets/Paginas/GeneradorContra.png";
