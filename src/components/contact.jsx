@@ -10,47 +10,41 @@ export const Contact = () => {
     apellido: "",
     email: "",
     telefono: "",
-    mensaje: "",
+    mensaje: ""
   };
 
-  const [form, setForm] = useState({
-    initialState,
-  });
+  const [form, setForm] = useState(initialState);
 
   const [errors, setErrors] = useState({
     nombre: false,
+    apellido: false,
     email: false,
-    mensaje: false,
+    telefono: false,
+    mensaje: false
   });
 
   const handleBlur = (field) => {
-    setErrors({ ...errors, [field]: !form[field] });
+    setErrors((prev) => ({ ...prev, [field]: !form[field] }));
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (
-      !form.nombre ||
-      !form.apellido ||
-      !form.email ||
-      !form.telefono ||
-      !form.mensaje
-    ) {
+    if (Object.values(form).some((value) => !value)) {
       setErrors({
         nombre: !form.nombre,
         apellido: !form.apellido,
         email: !form.email,
         telefono: !form.telefono,
-        mensaje: !form.mensaje,
+        mensaje: !form.mensaje
       });
       return;
     }
     Swal.fire({
       icon: "success",
-      title: "Mensaje enviado con éxito",
-      text: "En breve nos pondremos en contacto con usted",
+      title: "Mensaje enviado con exito",
+      text: "En breve nos pondremos en contacto contigo"
     }).then(() => {
-      setForm({ ...initialState });
+      setForm(initialState);
     });
 
     fetch("https://formspree.io/f/xzbndzjn", {
@@ -58,11 +52,9 @@ export const Contact = () => {
       body: JSON.stringify(form),
       headers: {
         Accept: "application/json",
-      },
+        "Content-Type": "application/json"
+      }
     }).then((res) => res.json());
-    // .then((res) => {
-    //   // console.log(res);
-    // });
   };
 
   return (
@@ -100,6 +92,7 @@ export const Contact = () => {
                       className={`w-full p-2 mt-1 border-2 ${
                         errors.nombre ? "border-red-500" : "border-gray-300"
                       } rounded-md focus:outline-none focus:border-blue-500 transition-colors duration-200`}
+                      value={form.nombre}
                       onBlur={() => handleBlur("nombre")}
                       onChange={(e) =>
                         setForm({ ...form, nombre: e.target.value })
@@ -120,6 +113,7 @@ export const Contact = () => {
                       className={`w-full p-2 mt-1 border-2 ${
                         errors.apellido ? "border-red-500" : "border-gray-300"
                       } rounded-md focus:outline-none focus:border-blue-500 transition-colors duration-200`}
+                      value={form.apellido}
                       onBlur={() => handleBlur("apellido")}
                       onChange={(e) =>
                         setForm({ ...form, apellido: e.target.value })
@@ -142,6 +136,7 @@ export const Contact = () => {
                       className={`w-full p-2 mt-1 border-2 ${
                         errors.email ? "border-red-500" : "border-gray-300"
                       } rounded-md focus:outline-none focus:border-blue-500 transition-colors duration-200`}
+                      value={form.email}
                       onBlur={() => handleBlur("email")}
                       onChange={(e) =>
                         setForm({ ...form, email: e.target.value })
@@ -162,6 +157,7 @@ export const Contact = () => {
                       className={`w-full p-2 mt-1 border-2 ${
                         errors.telefono ? "border-red-500" : "border-gray-300"
                       } rounded-md focus:outline-none focus:border-blue-500 transition-colors duration-200`}
+                      value={form.telefono}
                       onBlur={() => handleBlur("telefono")}
                       onChange={(e) =>
                         setForm({ ...form, telefono: e.target.value })
@@ -180,6 +176,7 @@ export const Contact = () => {
                       errors.mensaje ? "border-red-500" : "border-gray-300"
                     } rounded-md focus:outline-none focus:border-blue-500 transition-colors duration-200`}
                     rows="4"
+                    value={form.mensaje}
                     onBlur={() => handleBlur("mensaje")}
                     onChange={(e) =>
                       setForm({ ...form, mensaje: e.target.value })
@@ -193,13 +190,15 @@ export const Contact = () => {
                     <div className="absolute z-10 w-32 h-32 rounded-full group-hover:scale-150 transition-all  duration-500 ease-in-out bg-sky-700 delay-150 group-hover:delay-150"></div>
                     <div className="absolute z-10 w-24 h-24 rounded-full group-hover:scale-150 transition-all  duration-500 ease-in-out bg-sky-600 delay-150 group-hover:delay-200"></div>
                     <div className="absolute z-10 w-16 h-16 rounded-full group-hover:scale-150 transition-all  duration-500 ease-in-out bg-sky-500 delay-150 group-hover:delay-300"></div>
-                    <input type="submit" value="Enviar" className="z-10" />
+                    <span className="z-10 text-sm sm:text-base font-semibold uppercase tracking-widest">
+                      Enviar
+                    </span>
                   </button>
                 </div>
               </form>
             </div>
 
-            <div className="felx flex-col">
+            <div className="flex flex-col">
               <InfoContact />
               <Maps />
             </div>

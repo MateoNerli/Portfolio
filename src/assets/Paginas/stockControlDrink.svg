@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360">
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f2027" />
+      <stop offset="0.5" stop-color="#203a43" />
+      <stop offset="1" stop-color="#2c5364" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="360" fill="url(#grad)" rx="28" ry="28" />
+  <g fill="#ffffff" font-family="'Segoe UI', Arial, sans-serif" text-anchor="middle">
+    <text x="300" y="150" font-size="42" font-weight="700">Stock Control</text>
+    <text x="300" y="205" font-size="42" font-weight="700">Drink</text>
+    <text x="300" y="265" font-size="24" opacity="0.7">Dashboard de inventario para bares</text>
+  </g>
+</svg>

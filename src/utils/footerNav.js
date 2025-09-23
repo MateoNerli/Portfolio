@@ -1,40 +1,36 @@
-import {
-  faGithub,
-  faInstagram,
-  faFacebook,
-  faLinkedin,
-  faWhatsapp,
-} from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope, faFileArrowDown } from "@fortawesome/free-solid-svg-icons";
+import cv from "../assets/CV - Mateo Nerli.pdf";
 
 export const footerNav = [
   {
     id: 1,
     name: "Github",
     link: "https://github.com/MateoNerli",
-    icon: faGithub,
+    icon: faGithub
   },
   {
     id: 2,
-    name: "Instagram",
-    link: "https://www.instagram.com/mateo.nerli/",
-    icon: faInstagram,
+    name: "LinkedIn",
+    link: "https://www.linkedin.com/in/mateo-nerli",
+    icon: faLinkedin
   },
   {
     id: 3,
-    name: "Facebook",
-    link: "https://www.facebook.com/mateo.nerli/",
-    icon: faFacebook,
+    name: "Email",
+    link: "mailto:mnerli2003@gmail.com",
+    icon: faEnvelope
   },
   {
     id: 4,
-    name: "Linkedin",
-    link: "https://www.linkedin.com/in/mateo-nerli/",
-    icon: faLinkedin,
+    name: "WhatsApp",
+    link: "https://wa.me/3364512460",
+    icon: faWhatsapp
   },
   {
     id: 5,
-    name: "Whatsapp",
-    link: "https://wa.me/3364512460",
-    icon: faWhatsapp,
-  },
+    name: "Descargar CV",
+    link: cv,
+    icon: faFileArrowDown
+  }
 ];

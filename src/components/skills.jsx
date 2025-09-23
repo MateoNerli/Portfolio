@@ -6,40 +6,62 @@ import { SkillsData } from "../utils/skills";
 export const Skills = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 900,
+      once: true
     });
   }, []);
 
   return (
-    <div className="box-border bg-[#1e2326] ">
-      <div className="max-w-[1200px] pt-[20px] mx-auto  ">
-        <div
-          className="text-3xl font-sans mb-[25px] text-center text-[#fff] p-[1rem] relative border-b"
-          id="skills"
-        >
-          <h2>Skills</h2>
-        </div>
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 ">
-          {SkillsData.map((skill) => (
-            <div
-              key={skill.name}
-              data-aos="flip-up"
-              className="flex flex-col items-center p-[0.5rem] relative mx-auto hover:border-b-2 hover:border-blue-300 mb-[10px]"
-            >
-              <img
-                src={skill.icon}
-                alt={skill.name}
-                width={100}
-                height={100}
-                className="relative rounded-full flex justify-center items-center transform transition-transform duration-500 hover:scale-110"
-              />
-              <p className="mt-2 text-white font-semibold text-center">
-                {skill.name}
-              </p>
+    <section className="bg-[#1e2326] py-16">
+      <div className="max-w-[1200px] mx-auto px-6">
+        <header className="text-center mb-10">
+          <p className="text-sm uppercase tracking-[0.3rem] text-blue-300">Stack</p>
+          <h2 className="text-3xl sm:text-4xl font-bold text-white">Tecnologias y habilidades</h2>
+          <p className="mt-4 text-gray-300 max-w-2xl mx-auto text-sm sm:text-base">
+            Experiencia end to end: desde el diseno de interfaces accesibles y modernas
+            hasta integraciones con servicios empresariales, automatizacion de flujos y despliegues continuos.
+          </p>
+        </header>
+
+        <div className="space-y-10">
+          {SkillsData.map((group) => (
+            <div key={group.category}>
+              <h3 className="text-xl font-semibold text-white mb-4 border-l-4 border-[#32adff] pl-4">
+                {group.category}
+              </h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+                {group.items.map((skill) => (
+                  <article
+                    key={skill.name}
+                    data-aos="zoom-in"
+                    className="flex items-center gap-4 bg-[#23282c] border border-[#2f3539] rounded-xl px-4 py-3 hover:border-[#32adff] transition-colors duration-300"
+                  >
+                    {skill.icon ? (
+                      <img
+                        src={skill.icon}
+                        alt={skill.name}
+                        width={56}
+                        height={56}
+                        className="rounded-full shrink-0 shadow-lg"
+                      />
+                    ) : (
+                      <span className="w-14 h-14 shrink-0 rounded-full bg-[#32adff]/20 border border-[#32adff] text-[#32adff] font-bold flex items-center justify-center text-base">
+                        {skill.name.substring(0, 2).toUpperCase()}
+                      </span>
+                    )}
+                    <div>
+                      <p className="text-white font-semibold text-base">{skill.name}</p>
+                      {skill.note ? (
+                        <span className="text-xs text-gray-400">{skill.note}</span>
+                      ) : null}
+                    </div>
+                  </article>
+                ))}
+              </div>
             </div>
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };

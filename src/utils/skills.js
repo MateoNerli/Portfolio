@@ -3,7 +3,7 @@ import css from "../assets/Skills/CSS3.png";
 import js from "../assets/Skills/JavaScript.png";
 import react from "../assets/Skills/react.png";
 import vue from "../assets/Skills/vue.png";
-import CSharp from "../assets/Skills/C-Sharp.png";
+import cSharp from "../assets/Skills/C-Sharp.png";
 import git from "../assets/Skills/Git.png";
 import github from "../assets/Skills/GitHub.png";
 import mySql from "../assets/Skills/MySQL.png";
@@ -14,55 +14,48 @@ import tailwind from "../assets/Skills/tailwind.png";
 
 export const SkillsData = [
   {
-    name: "HTML",
-    icon: html,
+    category: "Frontend",
+    items: [
+      { name: "HTML", icon: html },
+      { name: "CSS", icon: css },
+      { name: "JavaScript", icon: js },
+      { name: "React", icon: react },
+      { name: "Next.js" },
+      { name: "Vue", icon: vue },
+      { name: "Angular", icon: angular },
+      { name: "TailwindCSS", icon: tailwind }
+    ]
   },
   {
-    name: "CSS",
-    icon: css,
+    category: "Backend",
+    items: [
+      { name: "Node.js", icon: node },
+      { name: "Express" },
+      { name: ".NET", icon: cSharp },
+      { name: "C#", icon: cSharp },
+      { name: "Python", icon: python },
+      { name: "PowerApps" },
+      { name: "Microsoft Dynamics 365" }
+    ]
   },
   {
-    name: "JavaScript",
-    icon: js,
+    category: "Bases de datos",
+    items: [
+      { name: "MySQL", icon: mySql },
+      { name: "PostgreSQL" },
+      { name: "SQL Server" },
+      { name: "SQLite" }
+    ]
   },
   {
-    name: "React",
-    icon: react,
-  },
-  {
-    name: "Vue",
-    icon: vue,
-  },
-  {
-    name: "C#",
-    icon: CSharp,
-  },
-  {
-    name: "Git",
-    icon: git,
-  },
-  {
-    name: "GitHub",
-    icon: github,
-  },
-  {
-    name: "MySQL",
-    icon: mySql,
-  },
-  {
-    name: "Node",
-    icon: node,
-  },
-  {
-    name: "Angular",
-    icon: angular,
-  },
-  {
-    name: "Python",
-    icon: python,
-  },
-  {
-    name: "Tailwind",
-    icon: tailwind,
-  },
+    category: "Herramientas",
+    items: [
+      { name: "Git", icon: git },
+      { name: "GitHub", icon: github },
+      { name: "Azure DevOps" },
+      { name: "Scrum" },
+      { name: "Testing y QA" },
+      { name: "Resolucion de problemas" }
+    ]
+  }
 ];

@@ -1,5 +1,6 @@
 import { Banner } from "./banner";
 import { SobreMi } from "./sobreMi";
+import { Experience } from "./experience";
 import { Skills } from "./skills";
 
 export const Home = () => {
@@ -7,6 +8,7 @@ export const Home = () => {
     <>
       <Banner />
       <SobreMi />
+      <Experience />
       <Skills />
     </>
   );
