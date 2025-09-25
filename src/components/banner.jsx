@@ -22,7 +22,7 @@ export const Banner = () => {
           experiencias fluidas que ayudan a las empresas a escalar.
         </p>
         <p className="mt-4 text-sm sm:text-base text-gray-300 max-w-2xl">
-          Actualmente desarrollo soluciones para SGRs en Humanware y trabaje en
+          Actualmente desarrollo soluciones para sistemas financieros y educativos en Humanware y trabaje en
           Logiports optimizando operaciones portuarias. Busco nuevos desafios
           donde seguir creciendo y aportar impacto desde la tecnologia.
         </p>

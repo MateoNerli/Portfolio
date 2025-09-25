@@ -8,7 +8,7 @@ const highlights = [
   "Automatizacion de flujos con Microsoft Dynamics 365 y Power Platform",
   "Arquitecturas escalables con .NET, Node y React",
   "Bases de datos relacionales: MySQL, PostgreSQL, SQL Server y SQLite",
-  "Metodologias agiles, liderazgo tecnico y foco en la calidad"
+  "Metodologias agiles, liderazgo tecnico y foco en la calidad",
 ];
 
 const personalInfo = [
@@ -16,16 +16,28 @@ const personalInfo = [
   { label: "Localidad", value: "San Nicolas de los Arroyos, Buenos Aires" },
   { label: "Nacionalidad", value: "Argentina" },
   { label: "Telefono", value: "+54 336 451 2460", link: "tel:+543364512460" },
-  { label: "Email", value: "mnerli2003@gmail.com", link: "mailto:mnerli2003@gmail.com" },
-  { label: "LinkedIn", value: "linkedin.com/in/mateo-nerli", link: "https://www.linkedin.com/in/mateo-nerli" },
-  { label: "GitHub", value: "github.com/MateoNerli", link: "https://github.com/MateoNerli" }
+  {
+    label: "Email",
+    value: "mnerli2003@gmail.com",
+    link: "mailto:mnerli2003@gmail.com",
+  },
+  {
+    label: "LinkedIn",
+    value: "linkedin.com/in/mateo-nerli",
+    link: "https://www.linkedin.com/in/mateo-nerli",
+  },
+  {
+    label: "GitHub",
+    value: "github.com/MateoNerli",
+    link: "https://github.com/MateoNerli",
+  },
 ];
 
 export const SobreMi = () => {
   useEffect(() => {
     AOS.init({
       duration: 900,
-      once: true
+      once: true,
     });
   }, []);
 
@@ -41,25 +53,34 @@ export const SobreMi = () => {
         </div>
         <div data-aos="fade-left" className="flex-1" id="sobre-mi">
           <header className="mb-6 text-center lg:text-left">
-            <p className="text-sm uppercase tracking-[0.3rem] text-blue-300 mb-2">Sobre mi</p>
+            <p className="text-sm uppercase tracking-[0.3rem] text-blue-300 mb-2">
+              Sobre mi
+            </p>
             <h2 className="text-3xl sm:text-4xl font-bold">
               Mateo Nerli | Full Stack Developer
             </h2>
             <p className="text-lg text-gray-300 mt-3">
-              Proactivo, organizado y orientado a aportar valor rapido a equipos multidisciplinarios.
-              Disfruto iterar con usuarios y negocio para entregar soluciones robustas que se integran con los sistemas existentes.
+              Proactivo, organizado y orientado a aportar valor rapido a equipos
+              multidisciplinarios. Disfruto iterar con usuarios y negocio para
+              entregar soluciones robustas que se integran con los sistemas
+              existentes.
             </p>
           </header>
 
           <p className="text-base text-gray-200 leading-relaxed">
-            Desde 2024 trabajo en Humanware desarrollando sistemas para SGRs con Microsoft Dynamics 365, PowerApps, .NET y React,
-            creando automatizaciones y paneles que reducen tiempos operativos. Previamente forme parte de Logiports
-            construyendo herramientas con React, C# y Node que mejoraron la logistica portuaria.
-            Estoy listo para dar el siguiente paso profesional, asumir mayores responsabilidades y seguir aprendiendo de mentores experimentados.
+            Desde 2024 trabajo en Humanware desarrollando sistemas para sitemas
+            financieros y educativos con Microsoft Dynamics 365, PowerApps, .NET
+            y React, creando automatizaciones y paneles que reducen tiempos
+            operativos. Previamente forme parte de Logiports construyendo
+            herramientas con React, C# y Node que mejoraron la logistica
+            portuaria. Estoy listo para dar el siguiente paso profesional,
+            asumir mayores responsabilidades y seguir aprendiendo de mentores
+            experimentados.
           </p>
 
           <p className="mt-5 text-base text-gray-300">
-            Dedicacion constante a formacion en tecnologias modernas como Next.js, Azure DevOps y practicas DevOps, junto con ingles nivel B2,
+            Dedicacion constante a formacion en tecnologias modernas como
+            Next.js, Azure DevOps y practicas DevOps, junto con ingles nivel B2,
             me permiten integrarme sin friccion a equipos globales.
           </p>
 
@@ -76,8 +97,13 @@ export const SobreMi = () => {
 
           <div className="mt-8 grid gap-3 sm:grid-cols-2">
             {personalInfo.map(({ label, value, link }) => (
-              <div key={label} className="bg-[#1e2326] rounded-lg px-4 py-3 border border-[#32383c]">
-                <p className="text-xs uppercase tracking-wide text-blue-300">{label}</p>
+              <div
+                key={label}
+                className="bg-[#1e2326] rounded-lg px-4 py-3 border border-[#32383c]"
+              >
+                <p className="text-xs uppercase tracking-wide text-blue-300">
+                  {label}
+                </p>
                 {link ? (
                   <a
                     href={link}

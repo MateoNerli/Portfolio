@@ -4,7 +4,7 @@ export const experienceData = [
     period: "Ago 2024 - Actualidad",
     role: "Full Stack Developer",
     description:
-      "Desarrollo de soluciones para SGRs integrando Microsoft Dynamics 365, PowerApps, .NET para automatizar flujos de aprobacion y generar tableros en tiempo real.",
+      "Desarrollo de soluciones para sistemas financieros y educativos integrando Microsoft Dynamics 365, PowerApps, .NET para automatizar flujos de aprobacion y generar tableros en tiempo real.",
     achievements: [
       "Implementacion de procesos automatizados que redujeron tiempos operativos",
       "Integracion de servicios .NET con Power Platform y SQL Server asegurando trazabilidad de extremo a extremo",
