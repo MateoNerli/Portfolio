@@ -1,4 +1,4 @@
-import imgYo from "../assets/yo.jpg";
+import imgYo from "../assets/yo.jpeg";
 import cv from "../assets/CV - Mateo Nerli.pdf";
 import AOS from "aos";
 import "aos/dist/aos.css";

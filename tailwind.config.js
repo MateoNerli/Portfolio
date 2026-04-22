@@ -8,6 +8,5 @@ export default {
       },
     },
   },
-  variants: {},
-  plugins: ["tailwindcss-grid-template-columns"],
+  plugins: [],
 };

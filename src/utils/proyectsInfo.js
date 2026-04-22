@@ -1,11 +1,13 @@
-import stockControl from "../assets/Paginas/stockControlDrink.png";
 import secretPass from "../assets/Paginas/secretPass.png";
-import vibratta from "../assets/Paginas/vibratta.png";
-import divisor from "../assets/Paginas/divisorGastos.png";
+import vibratta from "../assets/Paginas/vibratta1.png";
+import divisor from "../assets/Paginas/divisor.png";
 import memorama from "../assets/Paginas/memorama.png";
 import sixmotors from "../assets/Paginas/sixmotors.png";
 import sixMotorsDash from "../assets/Paginas/sixMotorsDash.png";
 import generador from "../assets/Paginas/GeneradorContra.png";
+import nexoproapp from "../assets/Paginas/nexoproapp.png";
+import controlcocina from "../assets/Paginas/controlcocina.png";
+import sistemstockcontrol from "../assets/Paginas/sistemstockcontrol.png";
 import {
   faHtml5,
   faCss3Alt,
@@ -13,30 +15,43 @@ import {
   faReact,
   faNode,
 } from "@fortawesome/free-brands-svg-icons";
-import { faDatabase, faShieldHalved } from "@fortawesome/free-solid-svg-icons";
+import {
+  faDatabase,
+  faDiagramNext,
+  faShieldHalved,
+} from "@fortawesome/free-solid-svg-icons";
 
 export const Pags = [
   {
-    title: "StockControlDrink",
-    desc: "Dashboard para bares que controla inventario en tiempo real con alertas de reposicion, roles por sucursal y reportes descargables.",
-    img: stockControl,
-    icon: [faReact, faNode, faDatabase],
-    stack: ["Next.js", "Node.js", "PostgreSQL"],
-    href: "https://stockcontroldrink.vercel.app/",
+    title: "Nexo Pro",
+    desc: "Plataforma integral para la gestión de eventos, invitados y consumos en un solo sistema. Centraliza la operación y elimina la necesidad de múltiples herramientas.",
+    img: nexoproapp,
+    icon: [faReact, faDiagramNext, faDatabase],
+    stack: ["Next.js", "Prisma", "PostgreSQL", "TailwindCSS"],
+    href: "https://nexo-pro-app.vercel.app/",
     github: null,
   },
   {
-    title: "Vibratta Sex Shop",
-    desc: "Ecommerce responsive con catalogo dinamico, filtros por categoria y flujo de checkout integrado a pasarelas de pago.",
+    title: "Sistema de Stock",
+    desc: "Dashboard para gestión de inventario en tiempo real con alertas de reposición, control por sucursales y generación de reportes para toma de decisiones.",
+    img: sistemstockcontrol,
+    icon: [faReact, faNode, faDatabase],
+    stack: ["Next.js", "Prisma", "PostgreSQL", "TailwindCSS"],
+    href: "https://sistemstockcontrol.vercel.app/",
+    github: null,
+  },
+  {
+    title: "Vibratta Ecommerce",
+    desc: "Ecommerce completo con catálogo dinámico, filtros por categoría y proceso de compra integrado con pasarelas de pago.",
     img: vibratta,
     icon: [faReact, faSquareJs, faCss3Alt],
-    stack: ["Next.js", "TailwindCSS"],
-    href: "https://vibratta-sexshop.vercel.app/",
+    stack: ["Next.js", "Prisma", "PostgreSQL", "TailwindCSS"],
+    href: "https://vibratta-shop.vercel.app/",
     github: null,
   },
   {
     title: "Secret Pass",
-    desc: "Aplicacion para generar y almacenar contrasenas seguras con cifrado local, autenticacion y sincronizacion multi dispositivo.",
+    desc: "Aplicación de gestión de contraseñas con cifrado local, autenticación segura y sincronización entre dispositivos.",
     img: secretPass,
     icon: [faReact, faShieldHalved, faSquareJs],
     stack: ["React", "Auth"],
@@ -44,8 +59,17 @@ export const Pags = [
     github: null,
   },
   {
-    title: "Divisor de gastos",
-    desc: "Herramienta colaborativa para dividir gastos de viajes o equipos, genera balances, exporta PDF y envia resenas automaticas.",
+    title: "Control Cocina",
+    desc: "Sistema para gestión de caja, pedidos e inventario en emprendimientos gastronómicos, con reportes de ventas y control operativo.",
+    img: controlcocina,
+    icon: [faReact, faShieldHalved, faSquareJs],
+    stack: ["React", "Auth"],
+    href: "https://secret-pass-one.vercel.app/",
+    github: null,
+  },
+  {
+    title: "Divisor de Gastos",
+    desc: "Herramienta colaborativa para dividir gastos entre grupos, generar balances automáticos y exportar resultados en PDF.",
     img: divisor,
     icon: [faReact, faSquareJs, faDatabase],
     stack: ["React", "LocalStorage"],
@@ -54,7 +78,7 @@ export const Pags = [
   },
   {
     title: "Memorama",
-    desc: "Juego de memoria con cartas que se voltean al hacer clic, incluye temporizador y contador de movimientos. Implementado con React.",
+    desc: "Juego interactivo de memoria con contador de movimientos y temporizador, desarrollado en React.",
     img: memorama,
     icon: [faReact, faSquareJs, faCss3Alt],
     stack: ["React", "React Router", "Tailwind"],
@@ -63,7 +87,7 @@ export const Pags = [
   },
   {
     title: "SixMotors",
-    desc: "Ecommerce de autos con autenticacion, carrito persistente y panel de administracion. Desarrollo full stack con Node, Express y MySQL desplegado en Render.",
+    desc: "Ecommerce full stack de vehículos con autenticación, carrito persistente y panel de administración. Backend en Node.js con base de datos MySQL.",
     img: sixmotors,
     icon: [faHtml5, faCss3Alt, faSquareJs, faNode, faDatabase],
     stack: ["Node", "Express", "MySQL", "JWT"],
@@ -72,7 +96,7 @@ export const Pags = [
   },
   {
     title: "SixMotors Dashboard",
-    desc: "Panel de monitoreo en React para visualizar ventas, usuarios y catalogo del ecommerce. Disenado como SPA con graficos, filtros y TailwindCSS.",
+    desc: "Panel de visualización de datos para ecommerce con gráficos, filtros y métricas clave de negocio en tiempo real.",
     img: sixMotorsDash,
     icon: [faReact, faSquareJs, faCss3Alt],
     stack: ["React", "React Router", "Tailwind", "Recharts"],
@@ -80,8 +104,8 @@ export const Pags = [
     github: "https://github.com/MateoNerli/DashboarSixMotors",
   },
   {
-    title: "Generador de contrasenas",
-    desc: "Generador configurable que permite definir longitud, uso de simbolos y exportar contrasenas seguras. Implementado con React y hooks personalizados.",
+    title: "Generador de Contraseñas",
+    desc: "Herramienta configurable para generar contraseñas seguras con opciones de personalización y lógica basada en hooks.",
     img: generador,
     icon: [faReact, faSquareJs],
     stack: ["React", "Vite", "Tailwind"],
