@@ -449,8 +449,8 @@ function App() {
         <div className="container">
           <p>Franco Nerli</p>
           <p>
-            Ingenieria Industrial | Busqueda laboral en operaciones, procesos y
-            analisis
+            Ingenieria Industrial | Operaciones | Analisis de procesos | Mejora
+            continua
           </p>
         </div>
       </footer>
