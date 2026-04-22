@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import profileImage from "./assets/franco.jpeg";
-import cvFile from "./assets/CV Franco Nerli 2025 (1).pdf";
+import cvFile from "./assets/cv - Franco Nerli (1).pdf";
 
 const navItems = [
   { id: "inicio", label: "Inicio" },
