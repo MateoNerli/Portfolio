@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import profileImage from "./assets/franco.jpeg";
-import cvFile from "./assets/cv - Franco Nerli (1).pdf";
+import profileImage from "./assets/fran.jpeg";
+import cvFile from "./assets/cv - Franco Nerli.pdf";
 
 const navItems = [
   { id: "inicio", label: "Inicio" },
@@ -9,7 +9,7 @@ const navItems = [
   { id: "proyectos", label: "Casos" },
   { id: "experiencia", label: "Experiencia" },
   { id: "skills", label: "Skills" },
-  { id: "educacion", label: "Educacion" },
+  { id: "educacion", label: "Educación" },
   { id: "contacto", label: "Contacto" },
 ];
 
@@ -17,88 +17,72 @@ const statCards = [
   {
     value: "2",
     label: "entornos reales",
-    note: "negocio propio + proyecto tecnico",
+    note: "negocio propio + proyecto técnico",
   },
   {
     value: "360",
-    label: "vision operativa",
-    note: "logistica, marketing, finanzas y procesos",
+    label: "visión operativa",
+    note: "logística, marketing, finanzas y procesos",
   },
   {
     value: "BI",
-    label: "mentalidad analitica",
+    label: "mentalidad analítica",
     note: "datos para ordenar decisiones",
   },
 ];
 
 const pillars = [
   {
-    title: "Operacion y negocio",
-    text: "Experiencia administrando un e-commerce propio con foco en ventas, logistica, finanzas y coordinacion diaria.",
+    title: "Operación y negocio",
+    text: "Experiencia administrando un e-commerce propio, con foco en ventas, logística, finanzas y coordinación diaria.",
   },
   {
     title: "Procesos y eficiencia",
-    text: "Base de Ingenieria Industrial aplicada a mejora continua, orden operativo y seguimiento de indicadores.",
+    text: "Base de Ingeniería Industrial aplicada a mejora continua, orden operativo y seguimiento de indicadores.",
   },
   {
-    title: "Analisis y herramientas",
-    text: "Uso de Microsoft 365, Power BI y SAP para estructurar informacion y facilitar decisiones.",
+    title: "Análisis y herramientas",
+    text: "Uso de Microsoft 365, Power BI y SAP para estructurar información y facilitar la toma de decisiones.",
   },
 ];
 
 const projects = [
   {
-    title: "Operacion integral de e-commerce",
+    title: "Operación integral de e-commerce",
     type: "Caso de negocio",
     problem:
-      "Un negocio digital necesita coordinar ventas, entregas, costos y comunicacion sin perder control operativo.",
+      "Un negocio digital necesita coordinar ventas, entregas, costos y comunicación sin perder el control operativo.",
     solution:
-      "Lidere la operacion diaria de punta a punta: gestion comercial, seguimiento logistico, control financiero y acciones de marketing digital.",
-    tools: ["Microsoft 365", "Gestion comercial", "Logistica", "Finanzas"],
+      "Lideré la operación diaria de punta a punta: gestión comercial, seguimiento logístico, control financiero y acciones de marketing digital.",
+    tools: ["Microsoft 365", "Gestión comercial", "Logística", "Finanzas"],
     impact:
-      "Desarrollo de criterio de negocio, capacidad para resolver desajustes operativos y mayor orden en la ejecucion diaria.",
-  },
-  {
-    title: "Optimización de procesos en energia solar",
-    type: "Proyecto tecnico",
-    problem:
-      "Los proyectos tecnicos requieren seguimiento claro, procesos consistentes y reportes confiables para detectar desvíos.",
-    solution:
-      "Participe en el analisis operativo, la organizacion de informacion tecnica y el armado de reportes para mejorar visibilidad y eficiencia.",
-    tools: [
-      "Microsoft 365",
-      "Reportes tecnicos",
-      "Analisis de procesos",
-      "Documentacion",
-    ],
-    impact:
-      "Aporte a una operacion mas estructurada, mejor trazabilidad de la informacion y enfoque en mejora continua.",
+      "Desarrollo de criterio de negocio, capacidad para resolver desajustes operativos y mayor orden en la ejecución diaria.",
   },
 ];
 
 const timeline = [
   {
     period: "Actualidad",
-    title: "Gestion de emprendimiento propio",
+    title: "Gestión de emprendimiento propio",
     place: "E-commerce",
     description:
-      "Coordinacion integral de un negocio digital con responsabilidad sobre operacion, seguimiento comercial, logistica, finanzas y marketing.",
+      "Coordinación integral de un negocio digital con responsabilidad sobre operación, seguimiento comercial, logística, finanzas y marketing.",
     bullets: [
-      "Toma de decisiones en contexto real, con recursos limitados y foco en ejecucion.",
-      "Vision completa del negocio: desde demanda y entrega hasta control economico.",
-      "Desarrollo de autonomia, criterio y capacidad para priorizar.",
+      "Toma de decisiones en contexto real, con recursos limitados y foco en la ejecución.",
+      "Visión completa del negocio: desde la demanda y la entrega hasta el control económico.",
+      "Desarrollo de autonomía, criterio y capacidad para priorizar.",
     ],
   },
   {
     period: "Experiencia previa",
-    title: "Pasantia en proyecto de energia solar",
-    place: "Entorno tecnico",
+    title: "Pasantía en proyecto de energía solar",
+    place: "Entorno técnico",
     description:
-      "Participacion en tareas de optimizacion de procesos y generacion de reportes para mejorar la lectura operativa del proyecto.",
+      "Participación en tareas de optimización de procesos y generación de reportes para mejorar la lectura operativa del proyecto.",
     bullets: [
-      "Analisis de informacion y seguimiento de procesos tecnicos.",
-      "Apoyo a la organizacion de reportes y visibilidad del proyecto.",
-      "Contacto con un entorno orientado a eficiencia y mejora continua.",
+      "Análisis de información y seguimiento de procesos técnicos.",
+      "Apoyo a la organización de reportes y visibilidad del proyecto.",
+      "Contacto con un entorno orientado a la eficiencia y mejora continua.",
     ],
   },
 ];
@@ -109,27 +93,27 @@ const skillGroups = [
     items: ["Microsoft 365", "Power BI", "SAP", "Excel avanzado"],
   },
   {
-    title: "Capacidad analitica",
+    title: "Capacidad analítica",
     items: [
-      "Analisis de procesos",
+      "Análisis de procesos",
       "Reportes operativos",
       "Seguimiento de indicadores",
-      "Documentacion",
+      "Documentación",
     ],
   },
   {
-    title: "Operacion",
+    title: "Operación",
     items: [
-      "Logistica",
-      "Coordinacion comercial",
-      "Gestion financiera",
+      "Logística",
+      "Coordinación comercial",
+      "Gestión financiera",
       "Mejora continua",
     ],
   },
   {
     title: "Competencias",
     items: [
-      "Pensamiento analitico",
+      "Pensamiento analítico",
       "Proactividad",
       "Adaptabilidad",
       "Liderazgo operativo",
@@ -213,16 +197,16 @@ function App() {
             transition={{ duration: 0.45 }}
             className="hero-copy"
           >
-            <p className="eyebrow">Ingenieria Industrial + Operaciones</p>
+            <p className="eyebrow">Ingeniería Industrial + Operaciones</p>
             <h1>
-              Soy Ingeniero Industrial y estoy buscando una oportunidad para
-              aportar en operaciones, procesos y mejora continua.
+              Soy Ingeniero Industrial y busco una oportunidad para aportar en
+              operaciones, procesos y mejora continua.
             </h1>
             <p className="lead">
-              Soy Franco Nerli, de San Nicolas de los Arroyos, Buenos Aires.
-              Tengo experiencia en e-commerce, logistica, finanzas y
-              optimizacion de procesos, y busco sumarme a una empresa donde
-              pueda ordenar operaciones, analizar informacion y generar mejoras
+              Soy Franco Nerli, de San Nicolás de los Arroyos, Buenos Aires.
+              Tengo experiencia en e-commerce, logística, finanzas y
+              optimización de procesos, y busco sumarme a una empresa donde
+              pueda ordenar operaciones, analizar información y generar mejoras
               concretas.
             </p>
             <div className="hero-actions">
@@ -270,17 +254,17 @@ function App() {
           <div className="section-heading">
             <p className="eyebrow">Perfil</p>
             <h2>
-              Combino criterio de negocio, base tecnica y capacidad de ejecucion
+              Combino criterio de negocio, base técnica y capacidad de ejecución
             </h2>
           </div>
           <p className="about-text">
-            Soy estudiante de Ingenieria Industrial en UTN y ya tuve experiencia
-            real gestionando un emprendimiento propio, ocupandome de e-commerce,
-            marketing digital, logistica y finanzas. Tambien participe en un
-            proyecto de energia solar enfocado en eficiencia, reportes tecnicos
-            y mejora de procesos. Me interesa incorporarme a una empresa donde
-            pueda seguir creciendo en roles de operaciones, analisis, procesos o
-            mejora continua.
+            Soy estudiante recibido de Ingeniería Industrial en la UTN y ya tuve
+            experiencia real gestionando un emprendimiento propio, ocupándome de
+            e-commerce, marketing digital, logística y finanzas. También
+            participé en un proyecto de energía solar enfocado en eficiencia,
+            reportes técnicos y mejora de procesos. Me interesa incorporarme a
+            una empresa donde pueda seguir creciendo en roles de operaciones,
+            análisis, procesos o mejora continua.
           </p>
           <div className="pillars-grid">
             {pillars.map((pillar, index) => (
@@ -407,7 +391,7 @@ function App() {
             <p className="timeline-period">Universidad Tecnologica Nacional</p>
             <h3>Ingenieria Industrial</h3>
             <p>
-              Estoy cursando Ingenieria Industrial en UTN, con una formacion
+              Estoy recibido de Ingenierio Industrial en UTN, con una formacion
               enfocada en analisis de procesos, productividad, organizacion
               operativa, mejora continua y toma de decisiones basada en
               informacion.
