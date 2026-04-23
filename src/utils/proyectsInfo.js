@@ -1,4 +1,4 @@
-import secretPass from "../assets/Paginas/secretPass.png";
+import secretPass from "../assets/Paginas/secretpas.png";
 import vibratta from "../assets/Paginas/vibratta1.png";
 import divisor from "../assets/Paginas/divisor.png";
 import memorama from "../assets/Paginas/memorama.png";
