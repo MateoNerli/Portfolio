@@ -64,7 +64,7 @@ export const Pags = [
     img: controlcocina,
     icon: [faReact, faShieldHalved, faSquareJs],
     stack: ["React", "Auth"],
-    href: "https://control-cocina.vercel.app/",
+    href: "https://secret-pass-one.vercel.app/",
     github: null,
   },
   {
