@@ -8,6 +8,7 @@ import generador from "../assets/Paginas/GeneradorContra.png";
 import nexoproapp from "../assets/Paginas/nexoproapp.png";
 import controlcocina from "../assets/Paginas/controlcocina.png";
 import sistemstockcontrol from "../assets/Paginas/sistemstockcontrol.png";
+import barberiaturnos from "../assets/Paginas/barberiaturnos.png";
 import {
   faHtml5,
   faCss3Alt,
@@ -29,6 +30,15 @@ export const Pags = [
     icon: [faReact, faDiagramNext, faDatabase],
     stack: ["Next.js", "Prisma", "PostgreSQL", "TailwindCSS"],
     href: "https://nexo-pro-app.vercel.app/",
+    github: null,
+  },
+  {
+    title: "Turneros para barberías",
+    desc: "Sistema de turnos para barberías con gestión de clientes, reservas y notificaciones. Optimiza la organización y mejora la experiencia del cliente.",
+    img: barberiaturnos,
+    icon: [faReact, faNode, faDatabase],
+    stack: ["Next.js", "Prisma", "PostgreSQL", "TailwindCSS", "Supabase"],
+    href: "https://turnero-barber.vercel.app/",
     github: null,
   },
   {
