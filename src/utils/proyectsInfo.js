@@ -8,7 +8,7 @@ import generador from "../assets/Paginas/GeneradorContra.png";
 import nexoproapp from "../assets/Paginas/nexoproapp.png";
 import controlcocina from "../assets/Paginas/controlcocina.png";
 import sistemstockcontrol from "../assets/Paginas/sistemstockcontrol.png";
-import barberiaturnos from "../assets/Paginas/barberiaturnos.png";
+import trexia from "../assets/Paginas/Captura de pantalla 2026-04-27 215241.png";
 import {
   faHtml5,
   faCss3Alt,
@@ -35,7 +35,7 @@ export const Pags = [
   {
     title: "Trexia",
     desc: "Sistema de turnos con gestión de clientes, reservas y notificaciones. Optimiza la organización y mejora la experiencia del cliente.",
-    img: barberiaturnos,
+    img: trexia,
     icon: [faReact, faNode, faDatabase],
     stack: ["Next.js", "Prisma", "PostgreSQL", "TailwindCSS", "Supabase"],
     href: "https://trexia.vercel.app/",
