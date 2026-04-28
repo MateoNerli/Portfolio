@@ -33,12 +33,12 @@ export const Pags = [
     github: null,
   },
   {
-    title: "Turneros para barberías",
-    desc: "Sistema de turnos para barberías con gestión de clientes, reservas y notificaciones. Optimiza la organización y mejora la experiencia del cliente.",
+    title: "Trexia",
+    desc: "Sistema de turnos con gestión de clientes, reservas y notificaciones. Optimiza la organización y mejora la experiencia del cliente.",
     img: barberiaturnos,
     icon: [faReact, faNode, faDatabase],
     stack: ["Next.js", "Prisma", "PostgreSQL", "TailwindCSS", "Supabase"],
-    href: "https://turnero-barber.vercel.app/",
+    href: "https://trexia.vercel.app/",
     github: null,
   },
   {
